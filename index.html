@@ -14,7 +14,7 @@
         <nav>
             <ul>
                 <li>
-                    <a  href = "#what-we-do">What WE Do</a>
+                    <a  href = "#what-we-do">What We Do</a>
                 </li>
 
                 <li>
@@ -31,11 +31,42 @@
             </ul>
         </nav>
        </header>
-
+       <!--Start Hero-->
        <section>
+            <div>
+                <h3>Get Started Today</h3>
+                <p>Fill out this form and one of our trainers will schedule a consult</p>
+            <!--Add form elemnt-->
+            <form>
+                <label for = "name">Enter full name:</label>
+                <input type = "text" placeholder = "Your Name" name = "name" id = "name" />
 
+                <label for = "email">Enter email address:</label>
+                <input type = "email" placeholder = "Email Address" name = "email" id = "email" />
+
+                <label for = "phone">Enter a telephone number:</label>
+                <input type = "tel" placeholder = "Phone Number" name = "phone" id = "phone" />
+
+                <p>
+                    Have you worked out with this trainer before?
+                    <input type = "radio" name = "trainer-confirm" id = "trainer-yes"/>
+                    <label for = "trainer-yes">Yes</label>
+
+                    <input type = "radio" name = "trainer-confirm" id = "trainer-no"/>
+                    <label for = "trainer-no">No</label>
+                </p>
+
+                <p>
+                    <label for = "checkbox">I acknowledge that I am at least 18 years of age.</label>
+                    <input type ="checkbox" name= "age-confirm" id = "checkbox" />
+                </p>
+                <button type = "submit">Get running!</button>
+                </button>
+            </form>
+           
+            </div>
        </section>
-
+        <!--End hero-->
        <section>
            <h2>What We Do</h2>
        </section>
@@ -54,23 +85,14 @@
 
        <footer>
            <h2>❤️ Made with love by Run Buddy.</h2>
-       </footer>
+
+           <div>
+               <a href = "#">Read Our Pivacy Policy</a><br /> 
+               &copy; 2019 RUN BUDDY, Inc.
+           </div>
+        </footer>
 
 
 
     </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
