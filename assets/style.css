@@ -415,16 +415,23 @@ section {
     display: flex;
     padding: 15px;
     align-items: flex-end;
+    position: relative;
 }
-/*.trainer-img::after {
+.trainer-img::after {
     content: "";
     height: 100%;
     width: 100%;
-    background: rgba(252,225,56,0.3);
-    position: absolute;
-    top: 0;
+    background: linear-gradient(135deg, rgba(252, 225, 56, 0.3));
+    position: relative;
+    top: 200px;
     left: 0;
-}*/
+    opacity: 0;
+    transition: linear;
+    display: none;
+  }
+  .trainer-img::after:hover {
+      opacity: 1;
+  }
 .trainer-1 {
     background-image: url(../assets/images/trainer-1.jpg);
 }
@@ -434,6 +441,28 @@ section {
 .trainer-3{
     background-image: url(../assets/images/trainer-3.jpg);
 }
+.trainer-img h3 {
+    position: relative;
+    z-index: -1;
+    transform: translate(-200px);
+    display: none;
+  }
+  
+  .trainer-img h4 {
+    position: relative;
+    z-index: -1;
+    transform: translate(-200px);
+    display: none;
+  }
+  .trainer-bio h3 {
+    font-size: 28px;
+  }
+  
+  .trainer-bio h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
 
 .contact {
     
